@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tailwind src import -->
     <link rel="stylesheet" href="./src/output.css">
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Tailwind project</title>
 </head>
 
@@ -16,11 +20,14 @@
                 <div class="nav-logo">
                     <a href="index.html"
                         class="tracking-[3px] px-[5px] py-[5px] transition-colors duration-300 hover:bg-gray-300">Gourmet
-                        au
-                        Catering</a>
+                        au Catering</a>
                 </div>
-                <div class="nav-menu">
-                    <ul class="list-none flex items-center gap-[20px]">
+                <div class="menu-btn md:hidden block fixed top-[10px] right-[10px] z-50">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div
+                    class="nav-menu right-[-100%] duration-300 md:ms-auto md:w-auto md:static fixed top-0 right-0 bottom-0 w-[50%] md:py-[10px] pt-[50px] md:bg-white bg-[#7575755e] backdrop-blur-[20px]">
+                    <ul class="list-none flex flex-col md:flex-row items-center gap-[20px]">
                         <li><a href="abt"
                                 class="tracking-[3px] font-[15px] hover:bg-gray-200 py-[5px] px-[4px]">About</a></li>
                         <li><a href="" class="tracking-[3px] font-[15px] hover:bg-gray-200 py-[5px] px-[4px]">Menu</a>
@@ -40,9 +47,9 @@
                 </h1>
             </div>
         </section>
-        <section class="abt-sec py-[67px]">
+        <section class="abt-sec py-[20px] md:py-[67px]">
             <div class="container max-w-[980px] mx-auto">
-                <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 place-items-center md:grid-cols-2 gap-4">
                     <div class=" py-[12px] px-[24px]">
                         <img class="w-[502px] h-[627px]" src="./assets/w3school-abt-img.jpg" alt="">
                     </div>
@@ -52,7 +59,8 @@
                             Catering</h2>
                         <h3 class="text-center font-[18px] font-Playfair-Display tracking-[5px] mt-[30px] mb-[18px]">
                             Tradition since 1889</h3>
-                        <p class="font-[13px] font-tinos mb-[20px]">The Catering was founded in blabla by Mr. Smith in
+                        <p class="font-[13px] text-center font-tinos mb-[20px]">The Catering was founded in blabla by
+                            Mr. Smith in
                             lorem ipsum
                             <br>
                             dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit,<br>
@@ -63,7 +71,8 @@
                             pariatur.We only use <span class="">seasonal</span> ingredients.
                         </p>
 
-                        <p class="font-[13px] font-tinos text-[#757575]">Excepteur sint occaecat cupidatat non proident,
+                        <p class="font-[13px] text-center font-tinos text-[#757575]">Excepteur sint occaecat cupidatat
+                            non proident,
                             sunt in culpa
                             qui officia deserunt mollit
                             anim
@@ -77,10 +86,10 @@
                 </div>
             </div>
         </section>
-        <section class="menu-sec py-[67px]">
+        <section class="menu-sec py-[20px] md:py-[67px]">
             <div class="container max-w-[980px] mx-auto">
-                <div class="grid grid-cols-2 gap-4">
-                    <div class=" py-[12px] px-[24px]">
+                <div class="grid grid-cols-1 place-items-center md:grid-cols-2 gap-4">
+                    <div class=" py-[12px] px-[24px] text-center">
                         <h2
                             class="text-center mt-[10px] mb-[55px] text-[36px] font-Playfair-Display font-normal tracking-[5px] capitalize">
                             Our Menu</h2>
@@ -115,8 +124,8 @@
             </div>
         </section>
         <hr class="my-[20px] max-w-[980px] mx-auto">
-        <section class="cntct-sec py-[67px]">
-            <div class="container max-w-[980px] mx-auto">
+        <section class="cntct-sec py-[20px] md:py-[67px]">
+            <div class="container text-center md:text-start max-w-[980px] mx-auto">
                 <h2 class="text-[36px] font-Playfair-Display font-normal tracking-[5px] capitalize">Contact</h2>
                 <p class="mt-[35px] mb-[15px] font-tinos text-[14px]">We offer full-service catering for any event,
                     large or small. We understand your needs and we will
@@ -129,9 +138,30 @@
                 </h3>
                 <p class="my-[15px] font-tinos text-[14px]">You can also contact us by phone 00553123-2323 or email
                     catering@catering.com, or you can send us a message here:</p>
+
+                <form action="">
+                    <div class="mb-[15px] w-full"><input
+                            class="w-full p-[18px_8px] font-Playfair-Display border-b border-[#ccc]" type="text"
+                            placeholder="Name" required name="name"></div>
+                    <div class="mb-[15px] w-full"><input
+                            class="w-full p-[18px_8px] font-Playfair-Display border-b border-[#ccc]" type="number"
+                            placeholder="How many people" required name="People"></div>
+                    <div class="mb-[15px] w-full"><input class="w-full p-[18px_8px] border-b border-[#ccc]"
+                            type="datetime-local" placeholder="Date and time" required name="date"
+                            value="2017-11-16T20:00"></div>
+                    <div class="mb-[15px] w-full"><input
+                            class="w-full p-[18px_8px] font-Playfair-Display border-b border-[#ccc]" type="text"
+                            placeholder="Message \ Special requirements" required name="Message">
+                    </div>
+                    <div class="my-[16px]"><input class="p-[8px_16px] bg-[#f1f1f1] font-Playfair-Display" type="submit"
+                            value="SEND MESSAGE">
+                    </div>
+                </form>
             </div>
         </section>
     </main>
+    <!-- custom js -->
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
