@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Belleza&family=Crimson+Pro:ital,wght@1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gothic+A1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poor+Story&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Belleza&family=Crimson+Pro:ital,wght@1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gothic+A1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poor+Story&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap");
 @layer properties;
+@font-face {
+  font-family: times;
+  src: url("../font/fonnts.com-TimesNewerRoman-Regular.otf");
+}
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -9,9 +13,10 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-yellow-400: oklch(85.2% 0.199 91.936);
+    --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-normal: 400;
@@ -21,6 +26,7 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-tinos: "Tinos", serif;
+    --font-times: times;
     --font-Playfair-Display: "Playfair Display", serif;
   }
 }
@@ -352,11 +358,20 @@
   .bg-\[\#7575755e\] {
     background-color: #7575755e;
   }
-  .bg-\[\#\] {
-    background-color: #;
-  }
   .bg-\[\#f1f1f1\] {
     background-color: #f1f1f1;
+  }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
+  }
+  .bg-gray-500 {
+    background-color: var(--color-gray-500);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -375,6 +390,12 @@
   }
   .p-\[18px_8px\] {
     padding: 18px 8px;
+  }
+  .px-\[2px\] {
+    padding-inline: 2px;
+  }
+  .px-\[3px\] {
+    padding-inline: 3px;
   }
   .px-\[4px\] {
     padding-inline: 4px;
@@ -412,6 +433,9 @@
   .font-Playfair-Display {
     font-family: var(--font-Playfair-Display);
   }
+  .font-times {
+    font-family: var(--font-times);
+  }
   .font-tinos {
     font-family: var(--font-tinos);
   }
@@ -423,6 +447,10 @@
   }
   .text-\[36px\] {
     font-size: 36px;
+  }
+  .font-\[12px\] {
+    --tw-font-weight: 12px;
+    font-weight: 12px;
   }
   .font-\[13px\] {
     --tw-font-weight: 13px;
@@ -462,17 +490,26 @@
   .text-\[\#757575\] {
     color: #757575;
   }
-  .text-\[15\] {
-    color: 15;
-  }
   .capitalize {
     text-transform: capitalize;
   }
   .underline {
     text-decoration-line: underline;
   }
-  .decoration-solid {
-    text-decoration-style: solid;
+  .opacity-1 {
+    opacity: 1%;
+  }
+  .opacity-5 {
+    opacity: 5%;
+  }
+  .opacity-15 {
+    opacity: 15%;
+  }
+  .opacity-50 {
+    opacity: 50%;
+  }
+  .opacity-80 {
+    opacity: 80%;
   }
   .shadow-\[0_2px_5px_0_rgba\(0\,0\,0\,0\.16\)\,_0_2px_10px_0_rgba\(0\,0\,0\,0\.12\)\] {
     --tw-shadow: 0 2px 5px 0 var(--tw-shadow-color, rgba(0,0,0,0.16)), 0 2px 10px 0 var(--tw-shadow-color, rgba(0,0,0,0.12));
@@ -519,6 +556,11 @@
       position: static;
     }
   }
+  .md\:z-40 {
+    @media (width >= 48rem) {
+      z-index: 40;
+    }
+  }
   .md\:ms-auto {
     @media (width >= 48rem) {
       margin-inline-start: auto;
@@ -562,6 +604,16 @@
   .md\:py-\[67px\] {
     @media (width >= 48rem) {
       padding-block: 67px;
+    }
+  }
+  .md\:text-left {
+    @media (width >= 48rem) {
+      text-align: left;
+    }
+  }
+  .md\:text-right {
+    @media (width >= 48rem) {
+      text-align: right;
     }
   }
   .md\:text-start {

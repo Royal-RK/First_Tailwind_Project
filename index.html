@@ -14,12 +14,12 @@
 </head>
 
 <body class="--font-tinos">
-    <header class="shadow-[0_2px_5px_0_rgba(0,0,0,0.16),_0_2px_10px_0_rgba(0,0,0,0.12)] fixed left-0 right-0 bg-white">
+    <header class="shadow-[0_2px_5px_0_rgba(0,0,0,0.16),_0_2px_10px_0_rgba(0,0,0,0.12)] md:z-40 fixed left-0 right-0 bg-white">
         <div class="container max-w-[1400px] py-[10px] px-[16px]">
             <nav class="flex justify-between items-center">
                 <div class="nav-logo">
                     <a href="index.html"
-                        class="tracking-[3px] px-[5px] py-[5px] transition-colors duration-300 hover:bg-gray-300">Gourmet
+                        class="tracking-[3px] px-[5px] py-[5px] font-times transition-colors duration-300 hover:bg-gray-300">Gourmet
                         au Catering</a>
                 </div>
                 <div class="menu-btn md:hidden block fixed top-[10px] right-[10px] z-50">
@@ -29,11 +29,14 @@
                     class="nav-menu right-[-100%] duration-300 md:ms-auto md:w-auto md:static fixed top-0 right-0 bottom-0 w-[50%] md:py-[10px] pt-[50px] md:bg-white bg-[#7575755e] backdrop-blur-[20px]">
                     <ul class="list-none flex flex-col md:flex-row items-center gap-[20px]">
                         <li><a href="abt"
-                                class="tracking-[3px] font-[15px] hover:bg-gray-200 py-[5px] px-[4px]">About</a></li>
-                        <li><a href="" class="tracking-[3px] font-[15px] hover:bg-gray-200 py-[5px] px-[4px]">Menu</a>
+                                class="tracking-[3px] font-[15px] font-times hover:bg-gray-200 py-[5px] px-[4px]">About</a>
+                        </li>
+                        <li><a href=""
+                                class="tracking-[3px] font-[15px] font-times hover:bg-gray-200 py-[5px] px-[4px]">Menu</a>
                         </li>
                         <li><a href="Contact"
-                                class="tracking-[3px] font-[15px] hover:bg-gray-200 py-[5px] px-[4px]">Contact</a></li>
+                                class="tracking-[3px] font-[15px] font-times hover:bg-gray-200 py-[5px] px-[4px]">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -43,7 +46,8 @@
         <section
             class="bnr-sec min-h-[100vh] bg-[url('../assets/w3school-bnr.jpg')] bg-center bg-cover w-[100%] flex justify-start items-end">
             <div class="container">
-                <h1 class="text-[36px] font-Playfair-Display font-normal tracking-[5px] mb-[10px] ms-[24px]">Le Catering
+                <h1 class="text-[36px] font-Playfair-Display font-normal tracking-[5px] mb-[10px] ms-[24px] opacity-50">
+                    Le Catering
                 </h1>
             </div>
         </section>
@@ -59,19 +63,20 @@
                             Catering</h2>
                         <h3 class="text-center font-[18px] font-Playfair-Display tracking-[5px] mt-[30px] mb-[18px]">
                             Tradition since 1889</h3>
-                        <p class="font-[13px] text-center font-tinos mb-[20px]">The Catering was founded in blabla by
+                        <p class="font-[12px] text-center md:text-left font-times mb-[20px]">The Catering was founded in
+                            blabla by
                             Mr. Smith in
                             lorem ipsum
-                            <br>
-                            dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit,<br>
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <br>
-                            nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in <br>
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla <br>
-                            pariatur.We only use <span class="">seasonal</span> ingredients.
+                            dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.We only use <span class="px-[2px] bg-gray-200">seasonal</span> ingredients.
                         </p>
 
-                        <p class="font-[13px] text-center font-tinos text-[#757575]">Excepteur sint occaecat cupidatat
+                        <p class="font-[13px] text-center md:text-left font-times text-[#757575]">Excepteur sint
+                            occaecat cupidatat
                             non proident,
                             sunt in culpa
                             qui officia deserunt mollit
@@ -89,32 +94,32 @@
         <section class="menu-sec py-[20px] md:py-[67px]">
             <div class="container max-w-[980px] mx-auto">
                 <div class="grid grid-cols-1 place-items-center md:grid-cols-2 gap-4">
-                    <div class=" py-[12px] px-[24px] text-center">
+                    <div class=" py-[12px] px-[24px] text-center md:text-left">
                         <h2
                             class="text-center mt-[10px] mb-[55px] text-[36px] font-Playfair-Display font-normal tracking-[5px] capitalize">
                             Our Menu</h2>
 
                         <h3 class="font-[20px] font-Playfair-Display tracking-[5px] my-[10px]">Bread Basket</h3>
-                        <p class="mb-[25px] font-tinos text-[15px] text-[#757575]">Assortment of fresh baked fruit
+                        <p class="mb-[25px] font-times text-[15px] text-[#757575]">Assortment of fresh baked fruit
                             breads and muffins
                             5.50</p>
 
                         <h3 class="font-[20px] font-Playfair-Display tracking-[5px] my-[10px]">Honey Almond Granola with
                             Fruits
                         </h3>
-                        <p class="mb-[25px] font-tinos text-[15px] text-[#757575]">Natural cereal of honey toasted oats,
+                        <p class="mb-[25px] font-times text-[15px] text-[#757575]">Natural cereal of honey toasted oats,
                             raisins, almonds and dates 7.00</p>
 
                         <h3 class="font-[20px] font-Playfair-Display tracking-[5px] my-[10px]">Belgian Waffle</h3>
-                        <p class="mb-[25px] font-tinos text-[15px] text-[#757575]">Vanilla flavored batter with malted
+                        <p class="mb-[25px] font-times text-[15px] text-[#757575]">Vanilla flavored batter with malted
                             flour 7.50</p>
 
                         <h3 class="font-[20px] font-Playfair-Display tracking-[5px] my-[10px]">Scrambled eggs</h3>
-                        <p class="mb-[25px] font-tinos text-[15px] text-[#757575]">Scrambled eggs, roasted red pepper
+                        <p class="mb-[25px] font-times text-[15px] text-[#757575]">Scrambled eggs, roasted red pepper
                             and garlic, with green onions 7.50</p>
 
                         <h3 class="font-[20px] font-Playfair-Display tracking-[5px] my-[10px]">Blueberry Pancakes</h3>
-                        <p class="mb-[25px] font-tinos text-[15px] text-[#757575]">With syrup, butter and lots of
+                        <p class="mb-[25px] font-times text-[15px] text-[#757575]">With syrup, butter and lots of
                             berries 8.50</p>
                     </div>
                     <div class="py-[12px] px-[20px]">
@@ -127,33 +132,30 @@
         <section class="cntct-sec py-[20px] md:py-[67px]">
             <div class="container text-center md:text-start max-w-[980px] mx-auto">
                 <h2 class="text-[36px] font-Playfair-Display font-normal tracking-[5px] capitalize">Contact</h2>
-                <p class="mt-[35px] mb-[15px] font-tinos text-[14px]">We offer full-service catering for any event,
+                <p class="mt-[35px] mb-[15px] font-times text-[14px]">We offer full-service catering for any event,
                     large or small. We understand your needs and we will
                     cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to
                     contact us.</p>
-                <h3 class="text-[#607d8b] font-tinos font-[18px] font-bold capitalize mb-[18px]">Catering Service, 42nd
+                <h3 class="text-[#607d8b] font-times font-[18px] font-bold capitalize mb-[18px]">Catering Service, 42nd
                     Living St,
                     43043 New
                     York, NY
                 </h3>
-                <p class="my-[15px] font-tinos text-[14px]">You can also contact us by phone 00553123-2323 or email
+                <p class="my-[15px] font-times text-[14px]">You can also contact us by phone 00553123-2323 or email
                     catering@catering.com, or you can send us a message here:</p>
 
                 <form action="">
-                    <div class="mb-[15px] w-full"><input
-                            class="w-full p-[18px_8px] font-Playfair-Display border-b border-[#ccc]" type="text"
-                            placeholder="Name" required name="name"></div>
-                    <div class="mb-[15px] w-full"><input
-                            class="w-full p-[18px_8px] font-Playfair-Display border-b border-[#ccc]" type="number"
-                            placeholder="How many people" required name="People"></div>
-                    <div class="mb-[15px] w-full"><input class="w-full p-[18px_8px] border-b border-[#ccc]"
+                    <div class="mb-[15px] w-full"><input class="w-full p-[18px_8px] font-times border-b border-[#ccc]"
+                            type="text" placeholder="Name" required name="name"></div>
+                    <div class="mb-[15px] w-full"><input class="w-full p-[18px_8px] font-times border-b border-[#ccc]"
+                            type="number" placeholder="How many people" required name="People"></div>
+                    <div class="mb-[15px] w-full"><input class="w-full p-[18px_8px] font-times border-b border-[#ccc]"
                             type="datetime-local" placeholder="Date and time" required name="date"
                             value="2017-11-16T20:00"></div>
-                    <div class="mb-[15px] w-full"><input
-                            class="w-full p-[18px_8px] font-Playfair-Display border-b border-[#ccc]" type="text"
-                            placeholder="Message \ Special requirements" required name="Message">
+                    <div class="mb-[15px] w-full"><input class="w-full p-[18px_8px] font-times border-b border-[#ccc]"
+                            type="text" placeholder="Message \ Special requirements" required name="Message">
                     </div>
-                    <div class="my-[16px]"><input class="p-[8px_16px] bg-[#f1f1f1] font-Playfair-Display" type="submit"
+                    <div class="my-[16px]"><input class="p-[8px_16px] bg-[#f1f1f1] font-times" type="submit"
                             value="SEND MESSAGE">
                     </div>
                 </form>
@@ -161,7 +163,7 @@
         </section>
         <section class="copy-right py-[20px] md:py-[32px] bg-[#f1f1f1]">
             <div class="container md:text-start max-w-[980px] mx-auto">
-                <h2 class="text-[15px] font-tinos text-center">Powered by <a href="" class="underline">w3.css</a></h2>
+                <h2 class="text-[15px] font-times text-center">Powered by <a href="" class="underline">w3.css</a></h2>
             </div>
         </section>
     </main>
