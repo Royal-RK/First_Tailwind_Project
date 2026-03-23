@@ -176,9 +176,6 @@
   .fixed {
     position: fixed;
   }
-  .relative {
-    position: relative;
-  }
   .start {
     inset-inline-start: var(--spacing);
   }
@@ -293,9 +290,6 @@
   .w-\[100\%\] {
     width: 100%;
   }
-  .w-\[100\] {
-    width: 100;
-  }
   .w-\[502px\] {
     width: 502px;
   }
@@ -320,9 +314,6 @@
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
-  .grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .flex-col {
     flex-direction: column;
   }
@@ -337,9 +328,6 @@
   }
   .justify-between {
     justify-content: space-between;
-  }
-  .justify-center {
-    justify-content: center;
   }
   .justify-start {
     justify-content: flex-start;
@@ -357,13 +345,6 @@
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
-  }
-  .border-b-\[1px\] {
-    border-bottom-style: var(--tw-border-style);
-    border-bottom-width: 1px;
-  }
-  .border-\[\#757575\] {
-    border-color: #757575;
   }
   .border-\[\#ccc\] {
     border-color: #ccc;
@@ -389,23 +370,11 @@
   .bg-center {
     background-position: center;
   }
-  .p-\[8px_8px\] {
-    padding: 8px 8px;
-  }
   .p-\[8px_16px\] {
     padding: 8px 16px;
   }
-  .p-\[18px\] {
-    padding: 18px;
-  }
-  .p-\[18px_8\] {
-    padding: 18px 8;
-  }
   .p-\[18px_8px\] {
     padding: 18px 8px;
-  }
-  .p-\[18px_\] {
-    padding: 18px ;
   }
   .px-\[4px\] {
     padding-inline: 4px;
@@ -433,9 +402,6 @@
   }
   .py-\[20px\] {
     padding-block: 20px;
-  }
-  .py-\[67px\] {
-    padding-block: 67px;
   }
   .pt-\[50px\] {
     padding-top: 50px;
@@ -496,11 +462,17 @@
   .text-\[\#757575\] {
     color: #757575;
   }
+  .text-\[15\] {
+    color: 15;
+  }
   .capitalize {
     text-transform: capitalize;
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .decoration-solid {
+    text-decoration-style: solid;
   }
   .shadow-\[0_2px_5px_0_rgba\(0\,0\,0\,0\.16\)\,_0_2px_10px_0_rgba\(0\,0\,0\,0\.12\)\] {
     --tw-shadow: 0 2px 5px 0 var(--tw-shadow-color, rgba(0,0,0,0.16)), 0 2px 10px 0 var(--tw-shadow-color, rgba(0,0,0,0.12));
@@ -528,10 +500,6 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
-  .outline-none {
-    --tw-outline-style: none;
-    outline-style: none;
-  }
   .hover\:bg-gray-200 {
     &:hover {
       @media (hover: hover) {
@@ -544,16 +512,6 @@
       @media (hover: hover) {
         background-color: var(--color-gray-300);
       }
-    }
-  }
-  .focus\:border-yellow-400 {
-    &:focus {
-      border-color: var(--color-yellow-400);
-    }
-  }
-  .focus\:outline-yellow-400 {
-    &:focus {
-      outline-color: var(--color-yellow-400);
     }
   }
   .md\:static {
@@ -594,6 +552,11 @@
   .md\:py-\[10px\] {
     @media (width >= 48rem) {
       padding-block: 10px;
+    }
+  }
+  .md\:py-\[32px\] {
+    @media (width >= 48rem) {
+      padding-block: 32px;
     }
   }
   .md\:py-\[67px\] {
